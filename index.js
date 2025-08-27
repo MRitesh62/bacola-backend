@@ -12,7 +12,7 @@ import reviewRouter from './routes/review.route';
 const app = express();
 app.use(cors())
 app.use(express.json());
-const port = 8001 || 5000;
+const port =  5000;
 app.use('/node-files',express.static('assets'))
 mongoose
     .connect("mongodb+srv://ritesh:<db_password>@cluster0.jywrqfc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
